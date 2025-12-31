@@ -264,7 +264,7 @@ Example:
 ```
 http://localhost/api/users?__eq_email=admin@example.com
 ```
-This will return only records whose field value matches the provided value (if the field exists).
+This will return only records whose field value matches the provided value (if the field exists in searchable else it will not work).
 
 > Similarly we can use **__neq_{field_name}={value}** for not equal, **__gte_{field_name}={value}** for greater or equl to and so on.
 ___
