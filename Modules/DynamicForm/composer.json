@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/dynamicform",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\DynamicForm\\": "app/",
+            "Modules\\DynamicForm\\Database\\Factories\\": "database/factories/",
+            "Modules\\DynamicForm\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\DynamicForm\\Tests\\": "tests/"
+        }
+    }
+}

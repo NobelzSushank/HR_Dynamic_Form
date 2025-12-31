@@ -1,0 +1,11 @@
+{
+    "name": "DynamicForm",
+    "alias": "dynamicform",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\DynamicForm\\Providers\\DynamicFormServiceProvider"
+    ],
+    "files": []
+}
