@@ -239,6 +239,36 @@ public/form_template.xlsx
 
 ---
 
+## API Query Parameters (Pagination & Filtering)
+
+### Disable Pagination
+By default, list APIs return paginated responses. To retrieve all records without pagination, pass:
+```
+?no_paginate=1
+```
+
+Example:
+```
+http://localhost/api/users?no_paginate=1
+```
+
+## Dynamic Filtering
+A base filtering mechanism has been implemented.
+
+Equality Filter
+```
+__eq_{field_name}={value}
+```
+
+Example:
+```
+http://localhost/api/users?__eq_email=admin@example.com
+```
+This will return only records whose field value matches the provided value (if the field exists).
+
+> Similarly we can use **__neq_{field_name}={value}** for not equal, **__gte_{field_name}={value}** for greater or equl to and so on.
+___
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
